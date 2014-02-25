@@ -2,13 +2,13 @@
     <head>
         <style>
             body {
-                background-image: url("images/space.jpg");
+                background-image: url("images/space_1.jpg");
                 background-size: 100%;
             }
             div#big_box {
-                width: 900px;
-                height: 800px;
-                background-color: #ffffff;
+                width: 1000px;
+                height: 700px;
+                background-color: rgba(255, 255, 255, .3);
             }
             
             /*a.twitter-timeline{
@@ -17,27 +17,37 @@
             }
             */
             div#twitter {
-                width: 400px;
+                /*width: 400px;
                 height: 400px;
-                background-color: orange;
+                background-color: orange;*/
+                padding: 10px;
                 float: left;
             }
 
             div#content {
-                width: 400px;
-                height: 400px;
-                background-color: purple;
+                width: 600px;
+                height: 200px;
+                background-color: rgba(153, 0, 153, .8);
+                padding: 10px;
                 float: left;
+                margin-top: 10px;
             }
             div#name {
-                width: 400px;
+                width: 600px;
                 height: 200px;
             }
 
             div.little_boxes {
-                width: 175px;
-                height: 200px;
+                width: 270px;
+                height: 180px;
                 float: left;
+                background-color: rgba(153,0,76,0.8);
+                margin-top: 20px;
+                padding: 10px;
+            }
+
+            div#right {
+                margin-left: 20px;
             }
         </style>
         <title>My Awesome Profile</title>
@@ -45,19 +55,31 @@
     <body>
         <div id="big_box">
             <div id="twitter">
-                <!-- <a class="twitter-timeline" href="https://twitter.com/luhrsaj" data-widget-id="438043959286181888">Tweets by @luhrsaj</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+                <a class="twitter-timeline" href="https://twitter.com/luhrsaj" data-widget-id="438043959286181888">Tweets by @luhrsaj</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
             <div id="content">
                 <div id="name">
+                    <img src="images/twitter_pic.jpeg">
                     <h1>@luhrsaj</h1>
-                    <p>twitter stuff</p>
+                    <p>Hackbright Fellow, Aspiring Software Engineer, DC Transplant</p>
                 </div>
-                <div class="little_boxes">
-                    <h1>My awesome projects</h1>
+                <div id="left" class="little_boxes">
+                    <h2>My awesome projects</h2>
+                    <hr>
+                    <p>SQL</p>
+                    <hr>
+                    <p>Candy Heart Bot</p>
+
                 </div>    
-                <div class="little_boxes">
-                    <h1>This is a contact form</h1>
+                <div id="right" class="little_boxes">
+                    <p>This is a contact form.</p>
+                    <form action="/some_webpage" method="GET">
+                        <p>Name: <input type="text" name="user_name">
+                        <p>Email: <input type="text" name="user_email">
+                        <p>Hometown: <input type="text" name="user_hometown">
+                        <p>Do you like bunnies?: Yes <input type="radio" name="user_bunny_preference" value="yes"> No <input type="radio" name="user_bunny_preference" value="no">
+                    </form>
                 </div>
             </div>
 
